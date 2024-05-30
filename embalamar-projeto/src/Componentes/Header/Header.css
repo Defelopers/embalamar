@@ -1,0 +1,27 @@
+.logo-titulo {
+    display:flex;
+    gap:10px;
+}
+.logo{
+    width:40px;
+    
+}
+.embalamar{
+    margin: 4px;
+}
+.input{
+    box-shadow: -5px 5px 12px  rgba(42, 148, 223, 0.352);
+}
+
+.button-procurar{
+    background-color: rgb(42, 148, 223);
+    border:none;
+  
+}
+
+.button-procurar:hover{
+    color:white;
+    background-color: rgb(33, 118, 179);
+    
+  
+}
