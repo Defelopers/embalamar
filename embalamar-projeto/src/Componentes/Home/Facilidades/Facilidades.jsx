@@ -8,8 +8,7 @@ const Facilidades = () => {
     <section class=" pb-4 ">
         <h2 class="text-center">Conheça todas nossas facilidades</h2>
 
-        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3 pt-4"
-            id="facilidades">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3 pt-4" id="facilidades">
             <div class="divs-facilidades  d-flex align-items-center">
                 <div><i class="bi bi-x-diamond-fill fs-1"></i></div>
                 <div>

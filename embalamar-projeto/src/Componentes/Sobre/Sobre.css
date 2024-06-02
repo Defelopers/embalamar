@@ -1,0 +1,166 @@
+.titulo {
+    text-align: center;
+    padding-top: 50px;
+    color:black;
+    font: bold;
+}
+
+.container{
+    display:block;
+    
+}
+.venda{
+    display:block;
+    justify-content:center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.venda img{
+    width:100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.379);
+}
+
+.venda p{
+    font-size: 30px;
+    padding-top: 20px;
+    /* text-align: justify; */
+    
+}
+
+.porque{
+    display:block;
+    justify-content:flex-end;
+    align-items: center;
+    padding-top: 150px;
+    gap:20px;
+}
+
+.porque img {
+    width:100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.379);
+}
+
+.porque div h1{
+    font-size: 35px;
+}
+
+.titulo-paragrafo-porque{
+    display: block;
+    font-size: 30px;
+    /* text-align: justify; */
+}
+
+.parceria{
+    display:block;
+    justify-content:center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.parceria img {
+    width:100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.379);
+}
+
+.parceria h1 {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.parceria p{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+
+
+@media screen and (min-width:950px){
+    .venda{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:20px;
+    padding-top: 150px;
+}
+
+.venda img{
+    width:40%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.379);
+}
+
+.venda p{
+    font-size: 30px;
+}
+
+.porque{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-top: 150px;
+    gap:20px;
+}
+
+.porque img {
+    width:40%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.379);
+}
+
+.titulo-paragrafo-porque{
+    display: block;
+}
+
+.parceria{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top: 150px;
+    gap:20px;
+}
+
+.parceria img {
+    width:30%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.379);
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
