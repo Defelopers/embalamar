@@ -1,3 +1,13 @@
+
+.principal{
+    padding:40px;
+}
+
+
+.nav-p{
+    font-size:1.5rem;
+    
+}
 .logo-titulo {
     display:flex;
     gap:10px;
@@ -11,17 +21,23 @@
 }
 .input{
     box-shadow: -5px 5px 12px  rgba(42, 148, 223, 0.352);
+    width:400px;
+    padding:15px;
 }
 
 .button-procurar{
-    background-color: rgb(42, 148, 223);
-    border:none;
+    background-color:#FFF;
+   
+    box-shadow: 5px 5px 12px  rgba(42, 148, 223, 0.352);
+    color:rgb(42, 148, 223);
+    border:1px solid rgb(42, 148, 223);
   
 }
 
 .button-procurar:hover{
     color:white;
-    background-color: rgb(33, 118, 179);
+    background-color: rgb(42, 148, 223);
+    border:1px solid rgb(42, 148, 223);
     
   
 }

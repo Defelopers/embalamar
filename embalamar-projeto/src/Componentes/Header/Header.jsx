@@ -23,9 +23,9 @@ const Header = () => {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="#action1">Home</Nav.Link>
-          <Nav.Link href="#action2">Sobre</Nav.Link>
-          <NavDropdown title="Produtos" id="navbarScrollingDropdown">
+          <Nav.Link href="#action1" className='nav-p'>Home</Nav.Link>
+          <Nav.Link href="#action2" className='nav-p'>Sobre</Nav.Link>
+          <NavDropdown title="Produtos" id="navbarScrollingDropdown" className='nav-p'>
             <NavDropdown.Item href="#action3">Garrafas Pets</NavDropdown.Item>
             <NavDropdown.Item href="#action4">
               Canudinhos
@@ -35,7 +35,7 @@ const Header = () => {
               Copos
             </NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="#" disabled>
+          <Nav.Link href="#"  className='nav-p '>
             Contato
           </Nav.Link>
         </Nav>
@@ -46,7 +46,7 @@ const Header = () => {
             className="me-2 input"
             aria-label="Search"
           />
-          <Button className='button-procurar'>Procurar</Button>
+          <Button className='button-procurar' >Procurar</Button>
         </Form>
       </Navbar.Collapse>
     </Container>
