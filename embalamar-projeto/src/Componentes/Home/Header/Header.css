@@ -39,3 +39,33 @@
     
   
 }
+.btns{
+    padding:0;
+    display:flex;
+    gap:30px;
+}
+.btn-cadastro{
+    border-radius: 0%;
+    width:100px;
+    background-color: rgb(42, 148, 223);
+    border:none;
+}
+
+.btn-cadastro:hover{
+    background-color: #FFF;
+    color:rgb(42, 148, 223);
+    border:1px solid rgb(42, 148, 223);
+}
+
+.btn-login{
+    border-radius: 0%;
+    width:100px;
+    background-color: rgb(42, 148, 223);
+    border:none;
+}
+
+.btn-login:hover{
+    background-color: #FFF;
+    color:rgb(42, 148, 223);
+    border:1px solid rgb(42, 148, 223);
+}
