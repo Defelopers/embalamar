@@ -3,13 +3,12 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./Header.css"
 import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Sobre from '../../Sobre/Sobre';
 import { Link } from 'react-router-dom';
-import GoogleLogin from 'react-google-login'
+import { GoogleLogin } from '@react-oauth/google';
 
 
 const Header = () => {
@@ -60,22 +59,21 @@ const Header = () => {
                 className="me-2 input"
                 aria-label="Search"
               />
-
+              <div className='d-flex gap-3'>
               <Button className='button-procurar'>Procurar</Button>
               {/* <Button className='btn-cadastro'>Cadastrar</Button> */}
-              <GoogleLogin className='btn-google'
-                clientId='334525707201-uiuubr08tqtmvjuqqn8kl9542ati474c.apps.googleusercontent.com'
-                buttonText='Continuar com o Google'
-                onSuccess={responseGoogle}
-                onFailure={responseGoogle}
+              <GoogleLogin className='google-login'
+                onSuccess={(credentialResponse) => {
+                  console.log(credentialResponse)
+                }}
+                onError={() => {
+                  console.log("Login Failed");
+                }}
               />
-              {isLoggedIn ? (<div>
-                <img src={profilePic} alt="" />
-                <p>Nome : {name}</p>
               </div>
-              ) : (
-                ""
-              )}
+
+
+              
             </Form>
 
 
