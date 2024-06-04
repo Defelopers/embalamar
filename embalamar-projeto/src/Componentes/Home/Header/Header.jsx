@@ -15,13 +15,13 @@ import GoogleLogin from 'react-google-login'
 const Header = () => {
 
 
-  const [name,setName] = useState()
+  const [name, setName] = useState()
   const [profilePic, setProfilePic] = useState()
   const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   const responseGoogle = (response) => {
     console.log(response);
-    const {profileObj: {name, imageUrl}} = response;
+    const { profileObj: { name, imageUrl } } = response;
     setName(name);
     setProfilePic(imageUrl);
     setIsLoggedIn(true)
@@ -52,40 +52,36 @@ const Header = () => {
                 Contato
               </Nav.Link>
             </Nav>
-             
-              <Form className="d-flex custom-display-block">
-                <Form.Control
-                  type="search"
-                  placeholder="Buscar produtos"
-                  className="me-2 input"
-                  aria-label="Search"
-                />
-                  <div className='btns'>
-                  <Button className='button-procurar'>Procurar</Button>
-                  {/* <Button className='btn-cadastro'>Cadastrar</Button> */}
-                  <GoogleLogin className='btn-google'
-                    clientId='334525707201-uiuubr08tqtmvjuqqn8kl9542ati474c.apps.googleusercontent.com'
-                    buttonText='Continuar com o Google'
-                    onSuccess={responseGoogle}
-                    onFailure={responseGoogle}
-                  />
-                   { isLoggedIn ? (<div>
-                    <img src={profilePic} alt="" />
-                    <p>Nome : {name}</p>
-                  </div>
-                  ) : (
-                    ""
-                  )} 
-                   
-                  
-                  </div>
-              
-          </Form>
-       
-        
-        </Navbar.Collapse>
-      </Container>
-    </Navbar >
+
+            <Form className="d-flex  search-form">
+              <Form.Control
+                type="search"
+                placeholder="Buscar produtos"
+                className="me-2 input"
+                aria-label="Search"
+              />
+
+              <Button className='button-procurar'>Procurar</Button>
+              {/* <Button className='btn-cadastro'>Cadastrar</Button> */}
+              <GoogleLogin className='btn-google'
+                clientId='334525707201-uiuubr08tqtmvjuqqn8kl9542ati474c.apps.googleusercontent.com'
+                buttonText='Continuar com o Google'
+                onSuccess={responseGoogle}
+                onFailure={responseGoogle}
+              />
+              {isLoggedIn ? (<div>
+                <img src={profilePic} alt="" />
+                <p>Nome : {name}</p>
+              </div>
+              ) : (
+                ""
+              )}
+            </Form>
+
+
+          </Navbar.Collapse>
+        </Container>
+      </Navbar >
 
       <div>
         <Routes>
