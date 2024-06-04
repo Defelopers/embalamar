@@ -42,9 +42,9 @@
 .btns{
     padding:0;
     display:flex;
-    gap:30px;
+    
 }
-.btn-cadastro{
+/* .btn-cadastro{
     border-radius: 0%;
     width:100px;
     background-color: rgb(42, 148, 223);
@@ -55,17 +55,29 @@
     background-color: #FFF;
     color:rgb(42, 148, 223);
     border:1px solid rgb(42, 148, 223);
-}
+} */
 
 .btn-login{
     border-radius: 0%;
     width:100px;
     background-color: rgb(42, 148, 223);
     border:none;
+    margin-left: 10px;
 }
 
 .btn-login:hover{
-    background-color: #FFF;
-    color:rgb(42, 148, 223);
-    border:1px solid rgb(42, 148, 223);
+    background-color: rgb(34, 129, 197);
+    color:rgb(255, 255, 255);
+    
 }
+
+.btn-google{
+    
+}
+
+@media screen and (max-width: 620px) {
+    .custom-display-block {
+        display: block;
+    }
+}
+
