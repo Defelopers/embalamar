@@ -1,14 +1,6 @@
 
-.principal{
-  padding:40px;
-  box-shadow: 5px 5px 10px rgba(42, 148, 223, 0.238);
-}
 
 
-.nav-p{
-  font-size:1.5rem;
-  
-}
 .logo-titulo {
   display:flex;
   gap:10px;
@@ -20,24 +12,9 @@
 .embalamar{
   margin: 4px;
 }
-.input{
-  box-shadow: -5px 5px 12px  rgba(42, 148, 223, 0.352);
-  width:300px;
-}
 
-.button-procurar{
-  background-color:#FFF;
-  box-shadow: 5px 5px 12px  rgba(42, 148, 223, 0.352);
-  color:rgb(42, 148, 223);
-  border:1px solid rgb(42, 148, 223);
 
-}
 
-.button-procurar:hover{
-  color:white;
-  background-color: rgb(42, 148, 223);
-  border:1px solid rgb(42, 148, 223);
-}
 
 /* .btn-cadastro{
   border-radius: 0%;

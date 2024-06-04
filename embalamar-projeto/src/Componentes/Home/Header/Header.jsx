@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "./Header.css"
+import "/src/styles/style.css"
 import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Sobre from '../../Sobre/Sobre';
@@ -48,8 +49,9 @@ const Header = () => {
               <Nav.Link href="#produtos" className='nav-p'>Produtos</Nav.Link>
 
               <Nav.Link href="#contato" className='nav-p'>
-                Contato
+              Feedback
               </Nav.Link>
+             
             </Nav>
 
             <Form className="d-flex  search-form">

@@ -1,0 +1,53 @@
+
+$textColor1:#000000d2;
+$textColor1-hover:rgba(77, 171, 238, 0.19);
+$textColor1-hover-text:rgb(0, 119, 205);
+$textColor2:#000;
+$btn1:#FFF;
+$btn2: rgb(42, 148, 223);
+$boxShadow:rgba(42, 148, 223, 0.238);
+
+
+.principal{
+    padding:40px;
+    box-shadow: $boxShadow;
+  }
+
+  .nav-p{
+    font-size:1.5rem;
+    color:$textColor1;
+    &:hover{
+        background: $textColor1-hover;
+        color:$textColor1-hover-text;
+        border-radius: 5px;
+    }
+  }
+
+  .input{
+    box-shadow: -5px 5px 12px $boxShadow;
+    width:300px;
+  }
+
+
+  .button-procurar{
+    background-color:$btn1;
+    box-shadow: 5px 5px 12px  $boxShadow;
+    color:$btn2;
+    border:1px solid $btn2;
+  
+  }
+  
+  .button-procurar:hover{
+    color:$btn1;
+    background-color: $btn2;
+    border:1px solid $btn2;
+  }
+
+
+  .input-contato{
+    box-shadow: -5px 5px 12px  rgba(42, 148, 223, 0.352);
+    border: none;
+    padding:10px;
+    border-radius: 8px;
+}
+  
