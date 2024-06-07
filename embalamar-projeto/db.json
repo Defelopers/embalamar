@@ -1,0 +1,35 @@
+{
+    "products": [
+        {
+            "id":1,
+            "name":"Sacolas Reutilizáveis",
+            "preco":"R$0,10 Unidade"
+        },
+        {
+            "id":2,
+            "name":"Filmes e sacos plásticos",
+            "preco":"R$0,25 Unidade"
+        },
+        {
+            "id":3,
+            "name":"Talheres",
+            "preco":"R$0,45 Unidade"
+        },
+        {
+            "id":4,
+            "name":"Pratos, tigelas e bandejas",
+            "preco":"R$1,00 Unidade"
+        },
+        {
+            "id":4,
+            "name":"Envoltórios para alimentos",
+            "preco":"R$0,15 Unidade"
+        },
+        {
+            "id":5,
+            "name":"Embalagens de fast food",
+            "preco":"R$0,20 Unidade"
+        }
+
+    ]
+}

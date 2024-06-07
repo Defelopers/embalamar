@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './MaisAdquiridos.css'
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
@@ -10,6 +10,21 @@ import { Link } from 'react-router-dom';
 
 
 const MaisAdquiridos = () => {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('/db.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => setProducts(data.products))
+      .catch(error => console.error('Erro ao buscar produtos:', error));
+  }, []);
+
   return (
     <>
       <h1 className='text-center pt-5' id="produtos">Produtos  :</h1>
@@ -100,6 +115,19 @@ const MaisAdquiridos = () => {
       </div>
       <div>
       </div>
+
+      <div>
+      
+      <ul>
+        {products.map(product => (
+          <li key={product.id}>
+            <h2>{product.name}</h2>
+            <p>{product.preco}</p>
+            {/* <p>Preço: R${product.price.toFixed(2)}</p> */}
+          </li>
+        ))}
+      </ul>
+    </div>
 
 
 
