@@ -73,7 +73,7 @@ const MaisAdquiridos = () => {
                 <Card className='w-100 h-100'>
                   <Card.Img variant="top" src="./public/img/celulose.jpg" />
                   <Card.Body>
-                    <Card.Title>Envoltórios para alimentos:</Card.Title>
+                    <Card.Title>Envoltórios para alimentos</Card.Title>
                     <Card.Text className='d-flex flex-column'>
                     Utilizados para embalar queijos, carnes e produtos de panificação. Estes filmes são biodegradáveis e compostáveis, substituindo os plásticos convencionais. São feitos de celulose.
                       <Button variant="outline-primary" className='w-50 mt-3'>Comprar</Button>
@@ -99,8 +99,10 @@ const MaisAdquiridos = () => {
         </Row>
       </div>
       <div>
-    
       </div>
+
+
+
     </>
   )
 }

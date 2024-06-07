@@ -1,13 +1,11 @@
 import React from 'react'
 import './Sobre.css'
-import Header from '../Home/Header/Header'
-import Footer from '../Home/Footer/Footer'
 import Accordion from 'react-bootstrap/Accordion';
 
 const Sobre = () => {
     return (
         <>
-            <Header />
+           
             <section>
                 <h1 className='titulo'>Sabia mais sobre nosso propósito</h1>
                 <div className='container'>
@@ -16,7 +14,7 @@ const Sobre = () => {
                         <Accordion defaultActiveKey="0" className='w-100'>
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>Clique para saber sobre nosso propósito</Accordion.Header>
-                                <Accordion.Body className=''>
+                                <Accordion.Body className='texto'>
                                     Muitas empresas estão cada vez mais conscientes da importância da sustentabilidade
                                     e da responsabilidade ambiental. Ao vender embalagens biodegradáveis, o ecommerce
                                     demonstra um compromisso com a redução do impacto ambiental, especialmente no que
@@ -27,12 +25,12 @@ const Sobre = () => {
                     </div>
 
                     <div className='porque'>
-                        <div className='titulo-paragrafo-porque'>
+                        <div className='w-100 titulo-paragrafo-porque'>
                             <h1>Porque</h1>
                             <Accordion defaultActiveKey="0" className='w-100'>
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>Clique para saber porque investir em embalagens biodegradáveis</Accordion.Header>
-                                    <Accordion.Body>
+                                    <Accordion.Body className='texto'>
                                         Embalagens plásticas tradicionais podem levar centenas de anos para se decompor,
                                         durante os quais podem causar danos significativos aos ecossistemas marinhos.
                                         Embalagens biodegradáveis se decompõem muito mais rapidamente e de maneira
@@ -41,17 +39,17 @@ const Sobre = () => {
                                 </Accordion.Item>
                             </Accordion>
                         </div>
-                        <img src="./public/img/porque-sobre.jpg" alt="" />
+                        <img src="./public/img/porque-sobre.jpg" alt=""/>
 
                     </div>
                     <div className='parceria'>
                         <img src="./public/img/onu-sobre.jpg" alt="" />
-                        <div>
+                        <div className='w-100 '>
                             <h1>Parceria</h1>
                             <Accordion defaultActiveKey="0" className='w-100'>
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>Clique para saber mais sobre nosso pareiro</Accordion.Header>
-                                    <Accordion.Body>
+                                    <Accordion.Body className='texto'>
                                         A Rede Brasil do Pacto Global atua promovendo a implementação dos princípios
                                         do Pacto Global da ONU no contexto brasileiro, incentivando empresas a adotarem
                                         práticas sustentáveis e de responsabilidade social. Para isso, organiza eventos,
@@ -68,7 +66,7 @@ const Sobre = () => {
 
             </section>
 
-            <Footer />
+          
 
         </>
     )

@@ -6,6 +6,8 @@ import Home from './Componentes/Home/Home.jsx'
 import Sobre from './Componentes/Sobre/Sobre.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import { GoogleOAuthProvider } from '@react-oauth/google'
+import MaisAdquiridos from './Componentes/Home/MaisAdquiridos/MaisAdquiridos.jsx'
+import Contato from './Componentes/Home/Contato/Contato.jsx'
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path:"sobre",
         element:<Sobre/>,
+      },
+      {
+        path:"produtos",
+        element:<MaisAdquiridos/>,
+      },
+      {
+        path:"contato",
+        element:<Contato/>,
       },
       
     ],

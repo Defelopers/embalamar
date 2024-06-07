@@ -46,12 +46,11 @@ const Header = () => {
             >
               <Nav.Link as={Link} to="/" className='nav-p'>Home</Nav.Link>
               <Nav.Link as={Link} to="/sobre" className='nav-p'>Sobre</Nav.Link>
-              <Nav.Link href="#produtos" className='nav-p'>Produtos</Nav.Link>
-
-              <Nav.Link href="#contato" className='nav-p'>
-              Feedback
+              <Nav.Link href="/produtos" className='nav-p'>Produtos</Nav.Link>
+              <Nav.Link href="/contato" className='nav-p'>
+                Contato
               </Nav.Link>
-             
+
             </Nav>
 
             <Form className="d-flex  search-form">
@@ -62,20 +61,23 @@ const Header = () => {
                 aria-label="Search"
               />
               <div className='d-flex gap-3'>
-              <Button className='button-procurar'>Procurar</Button>
-              {/* <Button className='btn-cadastro'>Cadastrar</Button> */}
-              <GoogleLogin className='google-login'
-                onSuccess={(credentialResponse) => {
-                  console.log(credentialResponse)
-                }}
-                onError={() => {
-                  console.log("Login Failed");
-                }}
-              />
+                <Button className='button-procurar'>Procurar</Button>
+                {/* <Button className='btn-cadastro'>Cadastrar</Button> */}
+                <div className='google-login'>
+                  <GoogleLogin 
+                    onSuccess={(credentialResponse) => {
+                      console.log(credentialResponse)
+                    }}
+                    onError={() => {
+                      console.log("Login Failed");
+                    }}
+
+                  />
+                </div>
               </div>
 
 
-              
+
             </Form>
 
 
@@ -84,9 +86,7 @@ const Header = () => {
       </Navbar >
 
       <div>
-        <Routes>
-          <Route path="/sobre" element={<Sobre />} />
-        </Routes>
+
       </div>
     </>
 
